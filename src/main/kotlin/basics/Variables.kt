@@ -9,5 +9,8 @@ fun main() {
     age = 55
     println("age = $age")
 
+    val salary = 55555L
+    println("salary = $salary")
+
 
 }
