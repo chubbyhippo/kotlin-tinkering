@@ -14,4 +14,14 @@ fun main() {
     for (i in reverseRange step 2) {
         println("i = $i")
     }
+
+    exploreWhile()
+}
+
+fun exploreWhile() {
+    var x = readln().toInt()
+    while (x < 100) {
+        println("x = $x")
+        x++
+    }
 }
