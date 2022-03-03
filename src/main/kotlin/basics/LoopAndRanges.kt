@@ -16,9 +16,21 @@ fun main() {
     }
 
     exploreWhile()
+    exploreDoWhile()
+}
+
+fun exploreDoWhile() {
+    print("input: ")
+    var x = readln().toInt()
+    do {
+        println("x = $x")
+        x++
+
+    } while (x < 100)
 }
 
 fun exploreWhile() {
+    print("input: ")
     var x = readln().toInt()
     while (x < 100) {
         println("x = $x")
