@@ -12,5 +12,13 @@ fun main() {
     val salary = 55555L
     println("salary = $salary")
 
+    println("name = ${name.length}")
 
+    val multiline = """
+        a
+        b
+        c
+    """.trimIndent()
+
+    println(multiline)
 }
