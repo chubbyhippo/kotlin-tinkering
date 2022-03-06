@@ -1,4 +1,4 @@
-package basics
+package com.example.basics
 
 fun main() {
     for (i in 1..5) {
