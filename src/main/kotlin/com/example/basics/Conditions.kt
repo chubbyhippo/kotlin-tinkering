@@ -1,4 +1,4 @@
-package basics
+package com.example.basics
 
 import kotlin.random.Random
 
