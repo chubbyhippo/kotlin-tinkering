@@ -1,6 +1,6 @@
-package basics
+package com.example.basics
 
-import functions.topLevelFunction
+import com.example.functions.topLevelFunction
 
 fun main() {
     val name = "Hippo"
@@ -29,4 +29,4 @@ fun main() {
 }
 
 val num = topLevelFunction()
-val name = functions.name
+val name = com.example.functions.name
