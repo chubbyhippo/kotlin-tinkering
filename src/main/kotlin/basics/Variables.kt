@@ -1,5 +1,7 @@
 package basics
 
+import functions.topLevelFunction
+
 fun main() {
     val name = "Hippo"
     println("name = $name")
@@ -21,4 +23,10 @@ fun main() {
     """.trimIndent()
 
     println(multiline)
+    println(num)
+    println(name)
+
 }
+
+val num = topLevelFunction()
+val name = functions.name
