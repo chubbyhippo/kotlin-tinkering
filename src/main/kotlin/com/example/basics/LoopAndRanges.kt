@@ -1,4 +1,4 @@
-package basics
+package com.example.basics
 
 fun main() {
     val range = 1..10
