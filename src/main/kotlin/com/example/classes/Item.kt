@@ -11,4 +11,5 @@ class Item {
 fun main() {
     val item = Item("Ipad")
     println("item = $item")
+    println(item)
 }
