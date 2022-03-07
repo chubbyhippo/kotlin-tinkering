@@ -4,7 +4,13 @@ class Person(
     val name: String = "",
     val age: Int = 20
 ) {
-    var email: String = ""
+    var email = ""
+    var nameLength = 0
+
+    init {
+        println("Init")
+        nameLength = name.length
+    }
 
     constructor(email: String) : this() {
         this.email = email
@@ -26,9 +32,12 @@ fun main() {
     )
 
     val person2 = Person("hippo@gmail.com")
-    println("""
+    println(
+        """
         Name: ${person2.name}
         Age: ${person2.age}
         email: ${person2.email} 
-    """.trimIndent())
+        name length: ${person2.nameLength}
+    """.trimIndent()
+    )
 }
