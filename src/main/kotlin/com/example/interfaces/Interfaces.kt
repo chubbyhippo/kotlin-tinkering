@@ -85,6 +85,6 @@ fun main() {
     )
     println("courseId1 = $courseId1")
 
-    var ab = AB()
+    val ab = AB()
     ab.doSomething()
 }
