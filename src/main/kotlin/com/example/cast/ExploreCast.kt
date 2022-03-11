@@ -12,6 +12,14 @@ fun main() {
     checkType(course)
     checkType("HIPPO")
 
+    castNumber(1.0)
+    castNumber(1)
+}
+
+fun castNumber(any: Any) {
+    when (any) {
+        any as Double -> println("Value is Double")
+    }
 }
 
 fun checkType(type: Any) {
