@@ -4,6 +4,11 @@ open class User(val name: String) {
     open var isLoggedIn = false
     open fun login() {
         println("$name is Logging in")
+        secret()
+    }
+
+    private fun secret() {
+        println("User private function secret")
     }
 }
 
