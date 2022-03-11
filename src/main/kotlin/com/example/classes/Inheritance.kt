@@ -10,6 +10,10 @@ open class User(val name: String) {
     private fun secret() {
         println("User private function secret")
     }
+
+    protected open fun logout() {
+        println("$name is Logging out")
+    }
 }
 
 class Student(name: String) : User(name) {
@@ -23,6 +27,11 @@ class Student(name: String) : User(name) {
     override fun login() {
         println("Inside Student Login")
         super.login()
+    }
+
+    override fun logout() {
+        super.logout()
+        println("Inside Student logout")
     }
 }
 
