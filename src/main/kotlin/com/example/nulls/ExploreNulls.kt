@@ -2,7 +2,10 @@ package com.example.nulls
 
 fun main() {
     var nameNullable: String? = null
-    println("nameNullable = $nameNullable")
+    println("nameNullable = ${nameNullable?.length}")
+
+    val length = nameNullable?.length?.toLong() ?: 0
+    println("length = $length")
 
     nameNullable = "Hippo"
     println("nameNullable = $nameNullable")
