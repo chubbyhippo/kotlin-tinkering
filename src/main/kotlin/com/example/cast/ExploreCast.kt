@@ -14,6 +14,10 @@ fun main() {
 
     castNumber(1.0)
     castNumber(1)
+
+    val number = 1
+    val numberDouble = number.toDouble()
+    println("numberDouble = $numberDouble")
 }
 
 fun castNumber(any: Any) {
