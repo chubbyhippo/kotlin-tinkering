@@ -20,4 +20,9 @@ fun main() {
 
     val nameAgeMap = mapOf("Hippo" to 33, "Girafe" to 34)
     println("nameAgeMap = $nameAgeMap")
+
+    val nameAgeMutableMap = mutableMapOf("Hippo" to 33, "Girafe" to 34)
+    println("nameAgeMutableMap = $nameAgeMutableMap")
+    nameAgeMutableMap["Kangaroo"] = 99
+    println("nameAgeMutableMap = $nameAgeMutableMap")
 }
