@@ -6,5 +6,6 @@ fun main() {
 
     val namesMutableList = mutableListOf("Hippo", "Giraffe", "Kangaroo")
     println("namesMutableList = $namesMutableList")
-
+    namesMutableList.add("Wombat")
+    println("namesMutableList = $namesMutableList")
 }
