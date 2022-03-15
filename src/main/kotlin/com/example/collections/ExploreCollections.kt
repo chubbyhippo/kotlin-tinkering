@@ -8,4 +8,8 @@ fun main() {
     println("namesMutableList = $namesMutableList")
     namesMutableList.add("Wombat")
     println("namesMutableList = $namesMutableList")
+
+
+    val set = setOf("Hippo", "Giraffe", "Kangaroo")
+    println("set = $set")
 }
