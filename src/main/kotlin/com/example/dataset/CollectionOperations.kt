@@ -5,7 +5,22 @@ fun main() {
 
     val devPredicate = { c: Course -> c.category == CourseCategory.DEVELOPMENT }
 
-    exploreFilter(courseList, devPredicate)
+//    exploreFilter(courseList, devPredicate)
+
+    exploreMap(courseList, devPredicate)
+}
+
+fun exploreMap(courseList: MutableList<Course>, devPredicate: (Course) -> Boolean) {
+    courseList
+        .filter(devPredicate)
+        .map {
+            """
+            ${it.name} - ${it.category}
+        """.trimIndent()
+        }.forEach {
+            println(it)
+        }
+
 }
 
 fun exploreFilter(
