@@ -5,9 +5,25 @@ fun main() {
 
     val devPredicate = { c: Course -> c.category == CourseCategory.DEVELOPMENT }
 
-//    exploreFilter(courseList, devPredicate)
+    exploreFilter(courseList, devPredicate)
 
     exploreMap(courseList, devPredicate)
+
+    val list = listOf(listOf(1, 2, 3), listOf(4, 5, 6))
+    println(list)
+    println(list.flatten())
+    println(exploreFlatMap(courseList, KAFKA))
+}
+
+fun exploreFlatMap(courseList: MutableList<Course>, kafka: String): List<String> {
+    return courseList.flatMap { course: Course ->
+        val courseName = course.name
+        course.topicsCovered.filter {
+            it == kafka
+        }.map {
+            courseName
+        }
+    }
 }
 
 fun exploreMap(courseList: MutableList<Course>, devPredicate: (Course) -> Boolean) {
