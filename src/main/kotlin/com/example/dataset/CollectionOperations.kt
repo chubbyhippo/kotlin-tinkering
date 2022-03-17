@@ -27,7 +27,8 @@ fun exploreHashMap() {
     val value = nameAgeMutableMap["Hippo"]
     println("value = $value")
 
-
+    val getOrElse = nameAgeMutableMap.getOrElse("Lion") { 3 }
+    println("getOrElse = $getOrElse")
 }
 
 fun exploreFlatMap(courseList: MutableList<Course>, kafka: String): List<String> {
