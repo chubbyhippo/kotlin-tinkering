@@ -13,6 +13,21 @@ fun main() {
     println(list)
     println(list.flatten())
     println(exploreFlatMap(courseList, KAFKA))
+
+    exploreHashMap()
+}
+
+fun exploreHashMap() {
+    val nameAgeMutableMap = mutableMapOf("Hippo" to 33, "Kangaroo" to 5)
+    nameAgeMutableMap
+        .forEach { (k, v) ->
+            println("k = [${k}], v = [${v}]")
+        }
+
+    val value = nameAgeMutableMap["Hippo"]
+    println("value = $value")
+
+
 }
 
 fun exploreFlatMap(courseList: MutableList<Course>, kafka: String): List<String> {
