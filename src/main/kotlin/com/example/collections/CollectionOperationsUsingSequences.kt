@@ -17,6 +17,15 @@ fun main() {
 
     exploreFilterUsingSequence(courseList(), devPredicate)
 
+    val range = 1 .. 1_000_000_000_000
+    range
+        .asSequence()
+        .map { it.toDouble() }
+        .take(40)
+        .forEach{
+            println("it = $it")
+        }
+
 }
 
 fun exploreFilterUsingSequence(courseList: MutableList<Course>, devPredicate: (Course) -> Boolean) {
