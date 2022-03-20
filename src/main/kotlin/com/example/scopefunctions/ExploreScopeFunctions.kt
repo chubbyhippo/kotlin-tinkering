@@ -6,6 +6,7 @@ import com.example.classes.CourseCategory
 fun main() {
 
     exploreApply()
+    exploreAlso()
 
 }
 
@@ -19,4 +20,17 @@ fun exploreApply() {
     }
 
     println("course = $course")
+}
+
+fun exploreAlso() {
+    Course(
+        1,
+        "Learning Hippo",
+        "Hippo"
+    ).apply {
+        courseCategory = CourseCategory.DESIGN
+    }.also {
+        println("it = $it")
+    }
+
 }
