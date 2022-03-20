@@ -9,6 +9,25 @@ fun main() {
     exploreAlso()
     exploreLet()
     exploreWith()
+    exploreRun()
+
+}
+
+fun exploreRun() {
+    var numbers: MutableList<Int>? = null
+    val result = numbers.run {
+        numbers = mutableListOf(1, 2, 3)
+        numbers?.sum()
+    }
+    println("result = $result")
+
+    val length = run {
+        val name = "Hippo"
+        println("name = $name")
+        name.length
+    }
+
+    println("length = $length")
 
 }
 
