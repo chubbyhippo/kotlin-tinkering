@@ -8,6 +8,19 @@ fun main() {
     exploreApply()
     exploreAlso()
     exploreLet()
+    exploreWith()
+
+}
+
+fun exploreWith() {
+    val numbers = mutableListOf(1, 2, 3, 4)
+    val result = with(numbers) {
+        println("size = $size")
+        val list = this.plus(9)
+            .plus(10)
+        list.sum()
+    }
+    println("result = $result")
 
 }
 
@@ -22,10 +35,10 @@ fun exploreLet() {
         }
     println("result = $result")
 
-    var name:String? = null
+    val name: String?
     name = "Hippo"
 
-    val result1 = name?.let {
+    val result1 = name.let {
         println("it = $it")
         it.uppercase()
     }
