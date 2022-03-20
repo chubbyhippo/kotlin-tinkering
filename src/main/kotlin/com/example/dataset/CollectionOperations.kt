@@ -34,6 +34,11 @@ fun exploreHashMap() {
         .map { it.key.uppercase() }
 
     println("filteredMap = $filteredMap")
+
+    val maxAge = nameAgeMutableMap
+        .maxByOrNull { it.value }
+
+    println("maxAge = $maxAge")
 }
 
 fun exploreFlatMap(courseList: MutableList<Course>, kafka: String): List<String> {
