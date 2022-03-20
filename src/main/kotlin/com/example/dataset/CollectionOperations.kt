@@ -15,6 +15,21 @@ fun main() {
     println(exploreFlatMap(courseList, KAFKA))
 
     exploreHashMap()
+
+    exploreCollectionsNullability()
+}
+
+fun exploreCollectionsNullability() {
+    val list: MutableList<String>? = null
+    list?.add("Hippo")
+    list?.forEach {
+        println("it = $it")
+    }
+
+    val listContainsNull = listOf("Hippo", null, "Kangaroo")
+    listContainsNull.forEach {
+        println("value length = ${it?.length}")
+    }
 }
 
 fun exploreHashMap() {
