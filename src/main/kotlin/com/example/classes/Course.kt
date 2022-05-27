@@ -13,7 +13,6 @@ data class Course(
 
 enum class CourseCategory {
     DEVELOPMENT,
-    BUSINESS,
     DESIGN,
     MARKETING
 
