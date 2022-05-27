@@ -1,3 +1,5 @@
+@file:JvmName("CourseUtils")
+
 package com.example.classes
 
 import com.example.CourseJava
