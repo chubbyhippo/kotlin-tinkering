@@ -17,6 +17,11 @@ enum class CourseCategory {
 
 }
 
+@JvmOverloads
+fun printName(name: String = "default") {
+    println("name: $name")
+}
+
 fun main() {
     val course = Course(
         1,
