@@ -11,6 +11,7 @@ data class Course(
     var courseCategory: CourseCategory = CourseCategory.DEVELOPMENT
 ){
     companion object {
+        @JvmStatic
         fun printInCompanion(name: String = "default") {
             println("name : $name")
         }
