@@ -17,5 +17,8 @@ public class InvokeKotlinFromJava {
         CourseUtils.print();
         Course.Companion.printInCompanion("test");
         Course.printInCompanion("ha ha ha");
+
+        course.noOfCourses = 99;
+        System.out.println("number of courses : " + course.noOfCourses);
     }
 }
