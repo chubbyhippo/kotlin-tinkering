@@ -17,6 +17,7 @@ enum class CourseCategory {
 
 }
 
+@JvmName("print")
 @JvmOverloads
 fun printName(name: String = "default") {
     println("name: $name")
