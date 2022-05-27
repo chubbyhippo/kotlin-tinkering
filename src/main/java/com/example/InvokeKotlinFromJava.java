@@ -1,5 +1,6 @@
 package com.example;
 
+import com.example.classes.Authenticate;
 import com.example.classes.Course;
 import com.example.classes.CourseCategory;
 import com.example.classes.CourseUtils;
@@ -20,5 +21,8 @@ public class InvokeKotlinFromJava {
 
         course.noOfCourses = 99;
         System.out.println("number of courses : " + course.noOfCourses);
+
+        Authenticate.INSTANCE.authenticate("test", "test");
+        Authenticate.authenticate("test", "test");
     }
 }
