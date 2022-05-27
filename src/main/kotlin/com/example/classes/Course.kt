@@ -1,5 +1,7 @@
 package com.example.classes
 
+import com.example.CourseJava
+
 data class Course(
     val id: Int,
     val name: String,
@@ -40,5 +42,14 @@ fun main() {
 
     println("course3 = $course3")
 
+    val courseJava = CourseJava(
+        3,
+        "Marketing",
+        "Marketing Hippo"
+    )
+
+    println("course java = $courseJava")
+    courseJava.id = 99
+    println("course java = $courseJava")
 
 }
