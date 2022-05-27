@@ -15,6 +15,21 @@ fun main() {
     println(exploreFlatMap(courseList, KAFKA))
 
     exploreHashMap()
+
+    exploreCollectionsNullability()
+}
+
+fun exploreCollectionsNullability() {
+    val list: MutableList<String>? = null
+    list?.add("Hippo")
+    list?.forEach {
+        println("it = $it")
+    }
+
+    val listContainsNull = listOf("Hippo", null, "Kangaroo")
+    listContainsNull.forEach {
+        println("value length = ${it?.length}")
+    }
 }
 
 fun exploreHashMap() {
@@ -34,6 +49,11 @@ fun exploreHashMap() {
         .map { it.key.uppercase() }
 
     println("filteredMap = $filteredMap")
+
+    val maxAge = nameAgeMutableMap
+        .maxByOrNull { it.value }
+
+    println("maxAge = $maxAge")
 }
 
 fun exploreFlatMap(courseList: MutableList<Course>, kafka: String): List<String> {
