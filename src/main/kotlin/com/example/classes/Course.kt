@@ -9,7 +9,13 @@ data class Course(
     val name: String,
     val author: String,
     var courseCategory: CourseCategory = CourseCategory.DEVELOPMENT
-)
+){
+    companion object {
+        fun printInCompanion(name: String = "default") {
+            println("name : $name")
+        }
+    }
+}
 
 enum class CourseCategory {
     DEVELOPMENT,
