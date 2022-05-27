@@ -14,6 +14,6 @@ public class InvokeKotlinFromJava {
         );
         System.out.println("course : " + course);
 
-        CourseKt.printName();
+        CourseKt.print();
     }
 }
