@@ -2,7 +2,6 @@ package com.example;
 
 import com.example.classes.Authenticate;
 import com.example.classes.Course;
-import com.example.classes.CourseCategory;
 import com.example.classes.CourseUtils;
 
 public class InvokeKotlinFromJava {
@@ -10,8 +9,7 @@ public class InvokeKotlinFromJava {
         var course = new Course(
                 1,
                 "Webflux Course",
-                "Hippo",
-                CourseCategory.DEVELOPMENT
+                "Hippo"
         );
         System.out.println("course : " + course);
 
