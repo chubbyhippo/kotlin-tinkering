@@ -2,7 +2,7 @@ package com.example;
 
 import com.example.classes.Course;
 import com.example.classes.CourseCategory;
-import com.example.classes.CourseKt;
+import com.example.classes.CourseUtils;
 
 public class InvokeKotlinFromJava {
     public static void main(String[] args) {
@@ -14,6 +14,6 @@ public class InvokeKotlinFromJava {
         );
         System.out.println("course : " + course);
 
-        CourseKt.print();
+        CourseUtils.print();
     }
 }
