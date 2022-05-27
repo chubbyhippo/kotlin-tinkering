@@ -4,14 +4,15 @@ package com.example.classes
 
 import com.example.CourseJava
 
-data class Course(
+data class Course @JvmOverloads constructor(
     val id: Int,
     val name: String,
     val author: String,
     var courseCategory: CourseCategory = CourseCategory.DEVELOPMENT
-){
+) {
     @JvmField
     var noOfCourses = 10
+
     companion object {
         @JvmStatic
         fun printInCompanion(name: String = "default") {
