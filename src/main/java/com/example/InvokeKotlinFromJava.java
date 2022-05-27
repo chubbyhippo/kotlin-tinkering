@@ -16,5 +16,6 @@ public class InvokeKotlinFromJava {
 
         CourseUtils.print();
         Course.Companion.printInCompanion("test");
+        Course.printInCompanion("ha ha ha");
     }
 }
